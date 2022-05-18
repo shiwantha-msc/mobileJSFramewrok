@@ -1,0 +1,36 @@
+{
+  "name": "mobilejsframewrok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "mobilejsframewrok": "bin/wdio.conf.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiwantha-msc/mobileJSFramewrok.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiwantha-msc/mobileJSFramewrok/issues"
+  },
+  "homepage": "https://github.com/shiwantha-msc/mobileJSFramewrok#readme",
+  "dependencies": {
+    "@wdio/appium-service": "^7.19.5",
+    "@wdio/cli": "^7.19.7",
+    "appium": "^2.0.0-beta.35"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.19.7",
+    "@wdio/mocha-framework": "^7.19.7",
+    "@wdio/spec-reporter": "^7.19.7",
+    "appium-uiautomator2-driver": "^2.1.2",
+    "chromedriver": "^101.0.0",
+    "wdio-chromedriver-service": "^7.3.2"
+  }
+}
