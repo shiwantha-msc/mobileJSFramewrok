@@ -53,7 +53,7 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
- platformName: "Android",
+    platformName: "Android",
     "appium:deviceName": "Mobile Pixel 5 API 32",
     "appium:automationName": "UIAutomator2",
     "appium:app": path.join(process.cwd(), "./app/android/ApiDemos-debug.apk"),
