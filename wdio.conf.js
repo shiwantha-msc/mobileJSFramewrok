@@ -58,7 +58,7 @@ exports.config = {
     "appium:automationName": "UIAutomator2",
     "appium:app": path.join(process.cwd(), "./app/android/ApiDemos-debug.apk"),
     }],
-    //
+    // "appium:automationName": "UIAutomator2",
     // ===================
     // Test Configurations
     // ===================
