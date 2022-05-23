@@ -8,12 +8,15 @@
     "webdriverio": "^7.16.11"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node app-fab-nagarro-tests/feature-tests/index.js",
     "ios": "APPIUM_OS=ios npm start",
     "android": "APPIUM_OS=android npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "TruongSinh Tran-Nguyen <i@truongsinh.pro",
+  "author": "Nagarro BFIS Mobile Framewrok",
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@wdio/cli": "^7.19.7"
+  }
 }

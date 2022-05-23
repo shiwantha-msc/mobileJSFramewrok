@@ -1,0 +1,5 @@
+{
+    "platformName": "Android",
+    "deviceName": "Mobile Pixel 5 API 32",
+    "app": "https://github.com/truongsinh/appium-flutter-driver/releases/download/v0.0.4/android-real-debug.apk"
+  }

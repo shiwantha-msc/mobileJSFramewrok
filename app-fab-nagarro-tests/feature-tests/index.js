@@ -1,12 +1,11 @@
-// import * as wdio from 'webdriverio';
-// import * as assert from 'assert';
 const wdio = require('webdriverio');
 const assert = require('assert');
 const find = require('appium-flutter-finder');
 const { byValueKey } = require('appium-flutter-finder'); 
+const osSpecificOps = require('../../appium-ui-core/app-mode/androideDriverConfig.json')
+const HomePage = require('../page-objects/homepage');
 
-const osSpecificOps =
-  process.env.APPIUM_OS === 'android'
+  /**process.env.APPIUM_OS === 'android'
     ? {
         platformName: 'Android',
         deviceName: 'Mobile Pixel 5 API 32',
@@ -25,7 +24,7 @@ const osSpecificOps =
         // app: 'https://github.com/truongsinh/appium-flutter-driver/releases/download/v0.0.4/ios-sim-debug.zip',
       }
     : {};
-
+**/
 const opts = {
   port: 4723,
   path: '/wd/hub',
@@ -38,7 +37,7 @@ const opts = {
 (async () => {
   const counterTextFinder = byValueKey('counter');
   const buttonFinder = byValueKey('increment');
-
+  
   const driver = await wdio.remote(opts);
 
   if (process.env.APPIUM_OS === 'android') {
